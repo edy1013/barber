@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+      </style>
     
     <title>Barber Shop</title>
 </head>
@@ -21,7 +23,7 @@
           <div class="logo_container">
 
             <div class="logo">
-              <img src="/images/logo.png" alt="logo">
+              <img src="images/logo.png" alt="logo">
             </div>
             <div class="logo_text">
               <h1>UNISEX<span>SALON</span></h1>
@@ -47,13 +49,54 @@
     <div class="banner">
       
       <div class="title-holder">
-
-        <h2 class="title">We are <span>Unisex salon</span></h2>
-        <h1>Li lingua franca va esser plu simplic</h1>
-        <p id="main-text">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. <br> A small river named Duden flows by their place and supplies <br> it with the necessary regelialia.</p>
-        <button id="main-button">Book Now</button>
-        <button id="second-button">Read More</button>
-
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <div class="carousel-caption d-none d-md-block">
+                <h5>We are <span>Unisex salon</span></h5>
+                <h1>Li lingua franca va esser plu simplic</h1>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large<br> language ocean. A small river named Duden flows by their place and supplies it with the<br> necessary regelialia.</p>
+                <button class="button btn-primary" id="main-btn">Book Now</button>
+                <button class="button btn-primary" id="secondary-btn">Read More</button>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              
+              <div class="carousel-caption d-none d-md-block">
+                <h5>We are <span>Unisex salon</span></h5>
+                <h1>Li lingua franca va esser plu simplic</h1>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large<br> language ocean. A small river named Duden flows by their place and supplies it with the<br> necessary regelialia.</p>
+                <button class="button btn-primary" id="main-btn">Book Now</button>
+                <button class="button btn-primary" id="secondary-btn">Read More</button>
+              </div>
+            </div>
+            <div class="carousel-item carousel-middle">
+              
+              <div class="carousel-caption d-none d-md-block">
+                <h5>We are <span>Unisex salon</span></h5>
+                <h1>Li lingua franca va esser plu simplic</h1>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large<br> language ocean. A small river named Duden flows by their place and supplies it with the<br> necessary regelialia.</p>
+                <button class="button btn-primary" id="main-btn">Book Now</button>
+                <button class="button btn-primary" id="secondary-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
        </div>
 
@@ -64,28 +107,28 @@
       <!-- About Start -->
 
     <div class="about">
-       
+       <div class="about-container">
           <div class="first-section">
               <h3>About Unisex Salon</h3>
               <h4>Leading Salon in <span>Melbourne</span></h4>
-              <img src="/images/line.png" alt="#">
+              <img src="images/line.png" alt="#">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque exercitationem voluptates rerum eveniet dolorem eos necessitatibus pariatur quasi iure officia magnam, accusantium maiores debitis optio enim quae. Eligendi, voluptatum voluptates.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque exercitationem voluptates</p>
               <button class="button">View Details</button>
           </div>
           <div class="second-section">
-              <img src="/images/black.jpg" alt="Our Hair Dresser">
+              <img src="images/black.jpg" alt="Our Hair Dresser">
               <h4>Hair Dresser</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque exercitationem voluptates</p>
               <a href="#">Read more</a>
           </div>
           <div class="third-section">
-            <img src="/images/black.jpg" alt="Our Massage Therapist">
+            <img src="images/black.jpg" alt="Our Massage Therapist">
             <h4>Massage Therapist</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque exercitationem voluptates</p>
             <a href="#">Read more</a>
           </div>
-       
+        </div>
     </div>
     <!--Team Start-->
     <div class="team">
@@ -93,7 +136,7 @@
 
         <div class="team-heading">
            <h4>WELL TRAINED <span>TEAM</span></h4>
-           <img src="/images/scisoors.png" alt="#">
+           <img src="images/scisoors.png" alt="#">
            <p>Li Europan lingues es membres del sam famille. Lor separat existentie un myth. Por<br>scientie, musica, sport etc, litat Europa usa li sam vocabular.</p>
         </div>
 
@@ -101,17 +144,17 @@
             <div class="box">
               <div class="imgBx">
                 
-                <img src="/images/barber1.jpg" alt="">
+                <img src="images/barber1.jpg" alt="">
               
             </div>
             <div class="imgBx">
-              <img src="/images/barber4.jpg" alt="">
+              <img src="images/barber4.jpg" alt="">
             </div>
             <div class="imgBx">
-              <img src="/images/barber2.jpg" alt="">
+              <img src="images/barber2.jpg" alt="">
             </div>
             <div class="imgBx">
-              <img src="/images/barber3.jpg" alt="">
+              <img src="images/barber3.jpg" alt="">
             </div>
            
         </div>
@@ -136,18 +179,18 @@
             <!--Basic Pricing-->
             <div class="col-md-4 table-col">
               <div class="price">
-                <img src="/images/basic.png" alt="#" id="basic">
+                <img src="images/basic.png" alt="#" id="basic">
                 <h5>Basic</h5>
-                <img src="/images/pricing-line.png" alt="#" id="line">
+                <img src="images/pricing-line.png" alt="#" id="line">
                 <ul>
                   <li>Cutting & Styling</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Free WI-FI</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Body Massage Service</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Manicure</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Steam bath</li>
                 </ul>
                 <h1>$29.00</h1>
@@ -160,18 +203,18 @@
             <!--Standard-->
             <div class="col-md-4 table-col">
               <div class="price featured">
-                <img src="/images/Standard.png" alt="#" id="standard">
+                <img src="images/Standard.png" alt="#" id="standard">
                 <h5>Standard</h5>
-                <img src="/images/pricing-line.png" alt="#" id="line">
+                <img src="images/pricing-line.png" alt="#" id="line">
                 <ul>
                   <li>Hair Dresser & Cutting</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Free WI-FI</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Massage Service</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Free Manicure</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Steam bath</li>
                 </ul>
                 <h1>$49.00</h1>
@@ -183,18 +226,18 @@
             <!--Premium-->
             <div class="col-md-4 table-col">
               <div class="price">
-                <img src="/images/premium.png" alt="#" id="premium">
+                <img src="images/premium.png" alt="#" id="premium">
                 <h5>Premium</h5>
-                <img src="/images/pricing-line.png" alt="#" id="line">
+                <img src="images/pricing-line.png" alt="#" id="line">
                 <ul>
                   <li>Hair Coloring & Styling</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Free WI-FI</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Nail Cutting & Coloring</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Make up</li>
-                  <img src="/images/list-line.png" alt="" id="list-devide">
+                  <img src="images/list-line.png" alt="" id="list-devide">
                   <li>Steam bath</li>
                 </ul>
                 <h1>$99.00</h1>
@@ -215,7 +258,7 @@
     <div class="gallery">
       <div class="gallery-title">
         <h1>UNISEX <span>GALLERY</span></h1>
-        <img src="/images/scisoors-white.png" alt="#">
+        <img src="images/scisoors-white.png" alt="#">
         <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por <br> scientie, musica,sport etc, litot Europa usa li sam vocabular.</p>
       </div>
 
@@ -242,7 +285,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/2.jpg" alt="" class="img-edisan">
+                                    <img src="images/2.jpg" alt="" class="img-edisan">
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -261,7 +304,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/3.jpeg" alt="" class="img-edisan">
+                                    <img src="images/3.jpeg" alt="" class="img-edisan">
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -280,7 +323,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/4.jpg" alt="" class="img-edisan" >
+                                    <img src="images/4.jpg" alt="" class="img-edisan" >
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -299,7 +342,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/5.jpg" alt="" class="img-edisan" >
+                                    <img src="images/5.jpg" alt="" class="img-edisan" >
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -318,7 +361,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/7.jpg" alt="img-fluid">
+                                    <img src="images/7.jpg" alt="img-fluid">
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -337,7 +380,7 @@
                             <div class="card">
   
                                 <div class="card-head">
-                                    <img src="/images/1.jpg" alt="">
+                                    <img src="images/1.jpg" alt="">
                                     
                                     <div class="card-hover">
                                         <h2>Lorem, ipsum.</h2>
@@ -497,6 +540,7 @@
     <ul>
       <li>Hello</li>
       <li>test</li>
+      
     </ul>
   </footer>
 
@@ -505,10 +549,10 @@
 
 
 
-    <script src="/jquery/jquery.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/isotope/isotope.min.js"></script>
-    <script src="/js/script.js"></script>  
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="isotope/isotope.min.js"></script>
+    <script src="js/script.js"></script>  
    
 </body>
 </html>
