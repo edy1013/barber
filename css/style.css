@@ -185,8 +185,16 @@
   margin-top: 37px;
 }
 
+
+
 .carousel-indicators {
   margin-bottom: 100px;
+}
+
+.carousel-indicators li {
+  height: 10px!important;
+  width: 10px!important;
+  border-radius: 50%!important;
 }
 
 /* About section */
